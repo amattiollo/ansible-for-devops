@@ -30,11 +30,11 @@
       command: >
         {{ download_dir }}/solr-{{ solr_version }}/bin/install_solr_service.sh
         {{ download_dir }}/solr-{{ solr_version }}.tgz
-        -i /opt
-        -d /var/solr
-        -u solr
-        -s solr
-        -p 8983
+        -i {{ solr_install_archive }}
+        -d {{ solr_live_files }}
+        -u {{ solr_username }}
+        -s {{ solr_service_name }}
+        -p {{ solr_port }}
         creates={{ solr_dir }}/bin/solr
 
     - name: Ensure solr is started and enabled on boot.

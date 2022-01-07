@@ -8,3 +8,10 @@ solr_dir: /opt/solr
 # Solr version and download information.
 solr_version: 8.6.0
 solr_checksum: sha512:6b0d618069e37215f305d9a61a3e65be2b9cfc32a3689ea6a25be2f220b1ecc96a644ecc31c81e335a2dfa0bc8b7d0f2881ca192c36fd435cdd832fd309a9ddb
+
+# Solr installation options
+solr_port: 8983
+solr_install_archive: /opt
+solr_live_files: /var/solr
+solr_username: solr
+solr_service_name: solr
